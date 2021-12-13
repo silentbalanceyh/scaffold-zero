@@ -45,9 +45,6 @@ extension:
         - /api/employee                   # 员工
         - /api/user                       # 用户
         - /api/wh                         # 仓库管理
-        - /api/mcard/publish              # 会员发卡
-        - /api/order/standard/submit      # 订单预定
-        - /api/order/direct/submit        # 直接预定/订单预定
         - /api/bill/                      # 账单操作
         - /api/bill-item/                 # 账单明细操作
         - /api/settle/                    # 结算单
