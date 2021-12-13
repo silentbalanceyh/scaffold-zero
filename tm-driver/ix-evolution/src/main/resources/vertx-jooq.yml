@@ -1,0 +1,43 @@
+jooq:
+  provider:
+    driverClassName: "com.mysql.cj.jdbc.Driver"
+    username: qianli
+    password: "pl,okmijn123"
+    instance: DB_QIANLI
+    hostname: "ox.engine.cn"
+    jdbcUrl: "jdbc:mysql://ox.engine.cn:3306/DB_QIANLI?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&failOverReadOnly=false&useSSL=false"
+## 工作流配置
+workflow:
+  name: HOTEL-WORKFLOW-ENGINE
+  builtIn:
+  # 文件管理工作流
+  - workflow/process.file.management/workflow.xlsx
+  database:
+    driverClassName: "com.mysql.cj.jdbc.Driver"
+    username: qianli
+    password: "pl,okmijn123"
+    instance: DB_QIANLI_WF
+    hostname: "ox.engine.cn"
+    jdbcUrl: "jdbc:mysql://ox.engine.cn:3306/DB_QIANLI_WF?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&failOverReadOnly=false&useSSL=false"
+
+# Cross Domain
+cors:
+  credentials: true
+  methods:
+    - DELETE
+    - GET
+    - POST
+    - PUT
+    - OPTIONS
+  headers:
+    - Authorization
+    - Accept
+    - Content-Disposition
+    - Content-Encoding
+    - Content-Length
+    - Content-Type
+    - X-App-Id
+    - X-App-Key
+    - X-Sigma
+    - X-Lang
+  origin: "http://ox.server.cn:6001"

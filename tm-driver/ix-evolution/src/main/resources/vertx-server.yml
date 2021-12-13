@@ -1,0 +1,6 @@
+server:
+  - name: web-qianli
+    type: http
+    config:
+      port: 6085
+      host: 0.0.0.0

@@ -1,0 +1,38 @@
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+!jetty-alpn*.jar
+!tool/code-gen/*.jar
+*.iml
+*.idea
+*target
+*logs
+*archive
+*.vertx
+file-uploads
+file-exported
+tool/redis/server
+.dump.rdb
+.auto_links.json
+.markeditor/
+configs/
+pom.xml.versionsBackup

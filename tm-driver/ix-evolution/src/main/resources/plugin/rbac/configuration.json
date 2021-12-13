@@ -1,0 +1,32 @@
+{
+    "condition": {
+        "user": [
+            "sigma"
+        ],
+        "role": [
+            "sigma"
+        ],
+        "group": [
+            "sigma"
+        ],
+        "permission": [
+            "sigma"
+        ],
+        "resource": [
+            "sigma"
+        ],
+        "action": [
+            "sigma"
+        ]
+    },
+    "codeExpired": 30,
+    "codeLength": 8,
+    "codePool": "POOL_CODE",
+    "tokenExpired": 30,
+    "tokenPool": "POOL_TOKEN",
+    "permissionPool": "POOL_PERMISSIONS",
+    "resourcePool": "POOL_RESOURCES",
+    "supportGroup": true,
+    "supportSecondary": true,
+    "passwordInit": "25D55AD283AA400AF464C76D713C07AD"
+}

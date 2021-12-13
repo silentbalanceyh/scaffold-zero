@@ -1,0 +1,11 @@
+zero:
+  lime: jet, jooq, secure, extension, excel
+  vertx:
+    instance:
+      - name: zero-qianli
+        options:
+          maxEventLoopExecuteTime: 1200_000_000_000 # Event loop default executing: 120s
+          maxWorkerExecuteTime: 1200_000_000_000 # Worker executing: 1200s -> 20 min
+          eventLoopPoolSize: 128
+          workerPoolSize: 256
+          internalBlockingPoolSize: 64
