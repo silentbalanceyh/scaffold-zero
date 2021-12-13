@@ -1,0 +1,11 @@
+# mysql: io.vertx.up.plugin.jdbc.MySqlInfix
+jooq: io.vertx.tp.plugin.jooq.JooqInfix
+# rpc: io.vertx.tp.plugin.rpc.RpcInfix
+
+# 共享SharedMap专用插件
+shared: io.vertx.tp.plugin.shared.MapInfix
+
+# Excel导入导出专用插件
+excel: io.vertx.tp.plugin.excel.ExcelInfix
+# Redis
+# redis: io.vertx.tp.plugin.redis.RedisInfix
