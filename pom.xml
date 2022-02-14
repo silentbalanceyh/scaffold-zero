@@ -16,7 +16,7 @@
         <module>tm-driver</module>
     </modules>
     <packaging>pom</packaging>
-    <name>千里 QianLi</name>
+    <name>「tm-platform」千里</name>
     <properties>
         <ajc.version>1.8</ajc.version>
     </properties>

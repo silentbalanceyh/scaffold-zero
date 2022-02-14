@@ -40,4 +40,5 @@ cors:
     - X-App-Key
     - X-Sigma
     - X-Lang
+    - X-Session-Id
   origin: "http://ox.server.cn:6001"
