@@ -11,6 +11,7 @@ boot:
   - executor: io.vertx.tp.ke.booter.AtomOOB
   - executor: io.vertx.tp.ke.booter.LbsOOB
   - executor: io.vertx.tp.ke.booter.WfOOB
+  - executor: io.vertx.tp.ke.booter.IsOOB
 init:
   # 初始化Crud
   - component: io.vertx.tp.crud.init.IxPin

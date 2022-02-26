@@ -47,3 +47,7 @@ databaseChangeLog:
   - include:
       file: plugin/sql/wf.yml
       relativeToChangelogFile: false
+  # Is
+  - include:
+      file: plugin/sql/is.yml
+      relativeToChangelogFile: false
