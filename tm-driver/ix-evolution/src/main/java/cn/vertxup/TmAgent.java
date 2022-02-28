@@ -1,4 +1,4 @@
-package com.qianli;
+package cn.vertxup;
 
 import io.vertx.up.VertxApplication;
 import io.vertx.up.annotations.Up;
