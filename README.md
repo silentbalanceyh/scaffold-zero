@@ -58,7 +58,7 @@ cd tm-api/tm-driver/ix-evolution/
 # 执行完成后，数据库中 DB_QIANLI 会出现数据表
 
 # 3. 加载数据（加载界面如下图）
-cn.vertxup.TmLoader（执行类）
+cn.vertxup.SvLoader（执行类）
 ```
 
 ![doc](doc/_image/screen.jpeg)
@@ -68,7 +68,7 @@ cn.vertxup.TmLoader（执行类）
 **注意图中绿色方框内配置部分**
 
 ```shell
-cn.vertxup.TmAgent（执行类）
+cn.vertxup.SvAgent（执行类）
 ```
 
 ```shell
