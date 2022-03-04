@@ -25,6 +25,18 @@ init:
   # 初始化Workflow
   - component: io.vertx.tp.workflow.init.WfPin
 
+## 模块化架构（License管理）
+module:
+  builtIn:
+  - modulat/zero-f.document.xlsx                # ZERO-F, 文档管理
+  - modulat/zero-f.logging.xlsx                 # ZERO-F, 日志管理
+  - modulat/zero-f.notification.xlsx            # ZERO-F, 提醒模块
+  - modulat/zero-f.is.xlsx                      # ZERO-F, 第三方集成
+  - modulat/zero-e.security.xlsx                # ZERO-E, 安全管理
+  - modulat/zero-e.organization.xlsx            # ZERO-E, 组织架构管理
+  - modulat/zero-e.customer.xlsx                # ZERO-E, 客户管理
+  - modulat/zero-e.employee.xlsx                # ZERO-E, 员工管理
+
 # monitor:
   # 打开安全模式的监控
   # secure: /api
