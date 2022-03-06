@@ -51,3 +51,7 @@ databaseChangeLog:
   - include:
       file: plugin/sql/is.yml
       relativeToChangelogFile: false
+  # Bettery
+  - include:
+      file: plugin/sql/battery.yml
+      relativeToChangelogFile: false
