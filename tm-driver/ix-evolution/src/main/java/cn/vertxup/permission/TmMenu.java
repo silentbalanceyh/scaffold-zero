@@ -9,7 +9,6 @@ public class TmMenu {
     private static final String ROOT = "src/main/resources/";
 
     public static void main(final String[] args) {
-
         // 打印所有菜单
         /*               DevKit.menuFetch(true).onSuccess(menus -> {
             System.out.println(menus.encodePrettily());
