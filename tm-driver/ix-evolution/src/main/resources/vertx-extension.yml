@@ -55,22 +55,6 @@ extension:
   auditor:
     component: io.vertx.tp.rbac.extension.AuditorPin
     config:
-      include:
-        - /api/employee                   # 员工
-        - /api/user                       # 用户
-        - /api/wh                         # 仓库管理
-        - /api/bill/                      # 账单操作
-        - /api/bill-item/                 # 账单明细操作
-        - /api/settle/                    # 结算单
-        - /api/up/flow/                   # 流程引擎
-        - /api/my/menu/save               # 保存个人菜单
-      exclude:
-        # CRUD 排除
-        - /api/:actor/search
-        - /api/:actor/missing
-        - /api/:actor/existing
-        - /api/:actor/export
-        - /api/:actor/import
 
 # database:
 #   sql.debug: true
