@@ -1,0 +1,8 @@
+{
+    "supportSource": true,
+    "initializer": "io.vertx.tp.optic.ambient.ApplicationInitializer",
+    "dataFolder": "init/oob/",
+    "fileStorage": "FILE",
+    "fileLanguage": "cn",
+    "storePath": "/tm"
+}

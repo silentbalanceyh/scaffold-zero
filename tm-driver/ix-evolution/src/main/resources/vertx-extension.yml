@@ -24,6 +24,8 @@ init:
   - component: io.vertx.tp.ui.init.UiPin
   # 初始化Workflow
   - component: io.vertx.tp.workflow.init.WfPin
+  # 初始化目录
+  - component: io.vertx.tp.is.init.IsPin
 
 ## 模块化架构（License管理）
 module:
