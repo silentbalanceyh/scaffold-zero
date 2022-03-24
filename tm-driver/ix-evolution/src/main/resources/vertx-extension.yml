@@ -38,6 +38,7 @@ module:
   - modulat/zero-e.organization.xlsx            # ZERO-E, 组织架构管理
   - modulat/zero-e.customer.xlsx                # ZERO-E, 客户管理
   - modulat/zero-e.employee.xlsx                # ZERO-E, 员工管理
+  - modulat/zero-e.finance.xlsx                 # ZERO-E, 财务管理
 
 # monitor:
   # 打开安全模式的监控
