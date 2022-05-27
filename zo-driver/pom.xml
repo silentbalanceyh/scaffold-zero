@@ -3,17 +3,17 @@
          xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>qianli</artifactId>
-        <groupId>com.qianli</groupId>
+        <artifactId>zo-scaffold</artifactId>
+        <groupId>cn.vertxup.scaffold</groupId>
         <version>0.1-RELEASE</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>tm-driver</artifactId>
+    <artifactId>zo-driver</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>ix-evolution</module>
+        <module>ix-scaffold</module>
     </modules>
-    <name>tm-driver, 千里启动程序</name>
+    <name>ix-driver: Zero Launcher Set</name>
 
 </project>

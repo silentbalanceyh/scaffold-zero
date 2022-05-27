@@ -3,19 +3,19 @@
          xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>tm-driver</artifactId>
-        <groupId>com.qianli</groupId>
+        <artifactId>zo-driver</artifactId>
+        <groupId>cn.vertxup.scaffold</groupId>
         <version>0.1-RELEASE</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>ix-evolution</artifactId>
-    <name>Launcher, 千里启动器</name>
+    <artifactId>ix-scaffold</artifactId>
+    <name>Launcher, Zero Scaffold Launcher</name>
     <dependencies>
         <!-- 底层元数据 -->
         <dependency>
-            <groupId>com.qianli</groupId>
-            <artifactId>tm-business</artifactId>
+            <groupId>cn.vertxup.scaffold</groupId>
+            <artifactId>zo-business</artifactId>
             <version>${project.version}</version>
         </dependency>
         <!-- Aspect J -->
@@ -103,7 +103,7 @@
                     <archive>
                         <manifest>
                             <!-- 指定程序入口 -->
-                            <mainClass>cn.vertxup.XcEntry</mainClass>
+                            <mainClass>cn.vertxup.ZoEntry</mainClass>
                             <!-- 打包时 MANIFEST.MF文件不记录的时间戳版本 -->
                             <useUniqueVersions>false</useUniqueVersions>
                             <addClasspath>true</addClasspath>

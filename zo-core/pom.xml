@@ -3,17 +3,16 @@
          xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>tm-core</artifactId>
-        <groupId>com.qianli</groupId>
+        <groupId>cn.vertxup.scaffold</groupId>
+        <artifactId>zo-scaffold</artifactId>
         <version>0.1-RELEASE</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>tm-domain</artifactId>
-    <name>tm-domain, 千里领域模型层</name>
-    <dependencies>
-        <dependency>
-            <groupId>cn.vertxup</groupId>
-            <artifactId>zero-vie</artifactId>
-        </dependency>
-    </dependencies>
+    <artifactId>zo-core</artifactId>
+    <packaging>pom</packaging>
+    <name>zo-core: Business / Components</name>
+    <modules>
+        <module>zo-domain</module>
+        <module>zo-business</module>
+    </modules>
 </project>

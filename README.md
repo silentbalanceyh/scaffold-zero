@@ -1,9 +1,9 @@
 # 操作步骤
 
-|基础项|说明|
-|---|---|
-|前端|http://ox.server.cn:6001/tm/login/index|
-|后端|http://ox.server.cn:6085|api|
+|基础项| 说明                                      |
+|---|-----------------------------------------|
+|前端| http://ox.server.cn:6001/zo/login/index |
+|后端| http://ox.server.cn:6081                |api|
 
 ## 1. 添加host地址
 
@@ -29,36 +29,37 @@ mvn clean package install
 ### 2.2. 代码下载后编译
 
 ```shell
-git clone https://github.com/Tokey2018/tm-api.git
-cd tm-api
+git clone https://github.com/silentbalanceyh/vertx-zero-scaffold
+cd vertx-zero-scaffold
+# ./build.sh
 mvn clean package install
 ```
 
 ### 2.3. 数据库设置
 
-|配置项| 说明             |
-|---|----------------|
-|数据库| `DB_QIANLI`    |
-|工作流库| `DB_QIANLI_WF` |
-|账号|qianli|
-|密码|pl,okmijn123|
-|端口|3306|
+|配置项| 说明         |
+|---|------------|
+|数据库| `DB_ZO`    |
+|工作流库| `DB_ZO_WF` |
+|账号| zero       |
+|密码| （参考加密教程）   |
+|端口| 3306       |
 
 ```shell
 # 1. 进入数据库初始目录
-cd tm-api/tm-driver/ix-evolution/scrip/database
+cd zo-driver/ix-scaffold/scrip/database
 #    执行脚本
 ./database-reinit.sh
-# 执行完成后，数据库中会多出 DB_QIANLI, DB_QIANLI_WF 表
+# 执行完成后，数据库中会多出 DB_ZO, DB_ZO_WF 表
 
 # 2. 进入启动器根目录
-cd tm-api/tm-driver/ix-evolution/
+cd zo-driver/ix-scaffold/
 #    初始化表
 ./run-init.sh
-# 执行完成后，数据库中 DB_QIANLI 会出现数据表
+# 执行完成后，数据库中 DB_ZO 会出现数据表
 
 # 3. 加载数据（加载界面如下图）
-cn.vertxup.SvLoader（执行类）
+cn.vertxup.ZoLoader（执行类）
 ```
 
 ![doc](doc/_image/screen.jpeg)
@@ -68,7 +69,7 @@ cn.vertxup.SvLoader（执行类）
 **注意图中绿色方框内配置部分**
 
 ```shell
-cn.vertxup.SvAgent（执行类）
+cn.vertxup.ZoAgent（执行类）
 ```
 
 ```shell
