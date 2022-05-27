@@ -78,4 +78,5 @@ cors:
     - X-Sigma
     - X-Lang
     - X-Session-Id
-  origin: "http://ox.server.cn:6001"
+  origin:
+    - "http://ox.server.cn:7004"
