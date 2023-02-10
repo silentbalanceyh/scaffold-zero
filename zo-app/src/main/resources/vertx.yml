@@ -1,0 +1,45 @@
+# 标准配置（不引入的）
+# - vertx-inject.yml      插件
+# - vertx-error.yml       系统错误定义
+# - vertx-readible.yml    人工错误定义
+# - vertx-server.yml      服务器（容器级）
+# 扩展配置（完整）
+# - vertx-excel.yml       Excel导入
+#     excel
+# - vertx-secure.yml      RBAC安全专用
+#     secure
+#     session
+# - vertx-shell.yml       DevOps命令行工具
+#     shell
+# 应用配置（每个应用不同）
+# - vertx-deployment.yml  开发部署（Agent、Worker、跨域、开发）
+#     cors                  跨域配置
+#     router                Agent路由
+#     deployment            Worker配置
+#     develop               开发专用配置
+# - vertx-detect.yml      集成（数据库、Redis、工作流、缓存、监控）
+#     jooq                  Jooq数据库访问
+#     workflow              Camunda工作流引擎
+#     cache                 缓存
+#     trash                 删除备份专用
+#     redis                 分布式缓存（配合缓存机制）
+#     elasticsearch         ES搜索服务
+#     neo4j                 Neo4J图数据库
+#     monitor               组件监控
+# - vertx-dock.yml        模块化（启动连接、初始化连接、模块加载、扩展组件）
+#     boot                  模块导入
+#     init                  模块初始化
+#     module                模块化加载
+#     extension             扩展组件
+
+zero:
+  lime: jet, jooq, secure, extension, excel
+  vertx:
+    instance:
+      - name: zero-scaffold
+        options:
+          maxEventLoopExecuteTime: 1200_000_000_000 # Event loop default executing: 120s
+          maxWorkerExecuteTime: 1200_000_000_000 # Worker executing: 1200s -> 20 min
+          eventLoopPoolSize: 128
+          workerPoolSize: 256
+          internalBlockingPoolSize: 64

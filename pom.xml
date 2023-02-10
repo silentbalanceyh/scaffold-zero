@@ -12,8 +12,10 @@
     <artifactId>vertx-zero-scaffold</artifactId>
     <version>0.1-RELEASE</version>
     <modules>
-        <module>zo-core</module>
-        <module>zo-driver</module>
+        <module>zo-inst</module>
+        <module>zo-module</module>
+        <module>zo-zone</module>
+        <module>zo-app</module>
     </modules>
     <packaging>pom</packaging>
     <name>「Experiment」Zero Scaffold Framework</name>
@@ -35,12 +37,12 @@
             <!-- 项目本身 -->
             <dependency>
                 <groupId>cn.vertxup.scaffold</groupId>
-                <artifactId>zo-domain</artifactId>
+                <artifactId>zo-commerce</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>cn.vertxup.scaffold</groupId>
-                <artifactId>zo-business</artifactId>
+                <artifactId>zo-zero</artifactId>
                 <version>${project.version}</version>
             </dependency>
         </dependencies>

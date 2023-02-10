@@ -1,6 +1,0 @@
-server:
-  - name: web-qianli
-    type: http
-    config:
-      port: 7084
-      host: 0.0.0.0

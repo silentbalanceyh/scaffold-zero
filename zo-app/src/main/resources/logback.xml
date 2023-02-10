@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="30 seconds" debug="false">
+    <!-- ========================= ZERO GLOBAL BEGIN ====================== -->
+    <!-- zero logger definition for global environment here -->
+    <include resource="up/annal/zero-environment.xml"/>
+
+    <!--
+         zero root logger, the configuration file name is the same
+         as log file with different file extension only.
+     -->
+    <include resource="up/annal/zero-epic-fabric.xml"/>
+    <!-- ========================= ZERO GLOBAL END ====================== -->
+
+
+    <!-- ========================= Zero Framework BEGIN ====================== -->
+    <include resource="up/annal/zero-jooq.xml"/>
+    <include resource="up/annal/zero-runtime.xml"/>
+    <include resource="up/annal/zero-secure.xml"/>
+    <include resource="up/annal/zero-uca-configuration.xml"/>
+    <include resource="up/annal/zero-uca-option.xml"/>
+    <include resource="up/annal/zero-uca-web.xml"/>
+    <include resource="up/annal/zero-uca-cosmic.xml"/>
+    <include resource="up/annal/zero-unity-x.xml"/>
+    <include resource="up/annal/zero-verticle.xml"/>
+    <!-- ========================= Zero Framework END ====================== -->
+
+
+    <!-- ========================= Zero Extension BEGIN ====================== -->
+    <include resource="plugin/annal/zero-api.xml"/>
+    <include resource="plugin/annal/zero-channel.xml"/>
+    <include resource="plugin/annal/zero-service.xml"/>
+
+    <include resource="plugin/annal/zero-module-lbs.xml"/>
+    <include resource="plugin/annal/zero-module-ui.xml"/>
+    <include resource="plugin/annal/zero-module-erp.xml"/>
+    <include resource="plugin/annal/zero-module-ambient.xml"/>
+    <include resource="plugin/annal/zero-module-router.xml"/>
+    <include resource="plugin/annal/zero-module-crud.xml"/>
+    <include resource="plugin/annal/zero-module-fm.xml"/>
+    <include resource="plugin/annal/zero-module-is.xml"/>
+    <include resource="plugin/annal/zero-module-jet.xml"/>
+    <include resource="plugin/annal/zero-module-atom.xml"/>
+    <include resource="plugin/annal/zero-module-wf.xml"/>
+    <include resource="plugin/annal/zero-module-rbac.xml"/>
+    <include resource="plugin/annal/zero-module-battery.xml"/>
+    <!-- ========================= Zero Extension END ====================== -->
+
+
+    <!-- ========================= Ox Engine BEGIN ====================== -->
+    <!--    <include resource="runtime/annal/ox-engine.xml"/>-->
+
+    <!--    <include resource="runtime/annal/ox-channel.xml"/>-->
+    <!--    <include resource="runtime/annal/ox-component.xml"/>-->
+    <!--    <include resource="runtime/annal/ox-web.xml"/>-->
+    <!--    <include resource="runtime/annal/ox-uca.xml"/>-->
+    <!--    <include resource="runtime/annal/ox-infix.xml"/>-->
+
+    <!--    <include resource="runtime/annal/ox-commerce.xml"/>-->
+    <!--    <include resource="runtime/annal/ox-database.xml"/>-->
+    <!--    <include resource="runtime/annal/ox-es.xml"/>-->
+    <!--    <include resource="runtime/annal/ox-plugin.xml"/>-->
+    <!--    <include resource="runtime/annal/ox-workflow.xml"/>-->
+    <!-- ========================= Ox Engine END ====================== -->
+    <include resource="plugin/hotel/annal/infix.xml"/>
+</configuration>
