@@ -21,6 +21,11 @@
             <version>${netty.version}</version>
             <scope>runtime</scope>
         </dependency>
+        <!-- Kern -->
+        <dependency>
+            <groupId>cn.vertxup</groupId>
+            <artifactId>zero-ke</artifactId>
+        </dependency>
     </dependencies>
 
     <build>

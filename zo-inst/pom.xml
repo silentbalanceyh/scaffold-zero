@@ -9,11 +9,11 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
+    <name>P/scaffold：指令集</name>
+    <packaging>pom</packaging>
     <artifactId>zo-inst</artifactId>
-
-    <properties>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
-    </properties>
-
+    <modules>
+        <module>zo-dpma</module>
+        <module>zo-menu</module>
+    </modules>
 </project>

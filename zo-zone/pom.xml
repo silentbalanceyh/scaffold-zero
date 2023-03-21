@@ -8,12 +8,10 @@
         <version>0.1-RELEASE</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
+    <name>P/scaffold：底座</name>
+    <packaging>pom</packaging>
     <artifactId>zo-zone</artifactId>
-
-    <properties>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
-    </properties>
-
+    <modules>
+        <module>zo-zero</module>
+    </modules>
 </project>

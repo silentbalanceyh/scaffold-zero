@@ -39,30 +39,30 @@ mvn clean package install
 
 |配置项| 说明         |
 |---|------------|
-|数据库| `DB_ZO`    |
-|工作流库| `DB_ZO_WF` |
+|数据库| `DB_SCAFFOLD`    |
+|工作流库| `DB_SCAFFOLD_WF` |
 |账号| zero       |
 |密码| （参考加密教程）   |
 |端口| 3306       |
 
 ```shell
 # 1. 进入数据库初始目录
-cd zo-driver/ix-scaffold/scrip/database
+cd zo-module/zo-commerce/script/database
 #    执行脚本
-./database-reinit.sh
-# 执行完成后，数据库中会多出 DB_ZO, DB_ZO_WF 表
+./database.reinit.sh
+# 执行完成后，数据库中会多出 DB_SCAFFOLD, DB_SCAFFOLD_WF 表
 
 # 2. 进入启动器根目录
-cd zo-driver/ix-scaffold/
+cd zo-app/
 #    初始化表
-./run-init.sh
-# 执行完成后，数据库中 DB_ZO 会出现数据表
+./init.db.sh
+# 执行完成后，数据库中 DB_SCAFFOLD 会出现数据表
 
 # 3. 加载数据（加载界面如下图）
 cn.vertxup.ZoLoader（执行类）
 ```
 
-![doc](doc/_image/screen.jpeg)
+![doc](doc/_image/img.png)
 
 ### 2.4. 启动后端（配置如上图）
 

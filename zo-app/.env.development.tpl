@@ -76,3 +76,6 @@ Z_API_PORT=7085
 # Z_DBH_HOST=ox.engine.cn
 # Z_DBH_PORT=3306
 # Z_DBH_INSTANCE=DB_HOTEL_HIS
+
+# ----------------------- HED 模块（必须）
+Z_HED_ENABLED=true

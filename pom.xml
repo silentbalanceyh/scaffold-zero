@@ -45,53 +45,12 @@
                 <artifactId>zo-zero</artifactId>
                 <version>${project.version}</version>
             </dependency>
+            <!-- Vertx Sync -->
+            <dependency>
+                <groupId>io.vertx</groupId>
+                <artifactId>vertx-sync</artifactId>
+                <version>${vertx.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
-    <build>
-        <plugins>
-            <!--<plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>aspectj-maven-plugin</artifactId>
-                <dependencies>
-                    <dependency>
-                        <groupId>org.aspectj</groupId>
-                        <artifactId>aspectjrt</artifactId>
-                        <version>${aspectj.version}</version>
-                    </dependency>
-                    <dependency>
-                        <groupId>org.aspectj</groupId>
-                        <artifactId>aspectjtools</artifactId>
-                        <version>${aspectj.version}</version>
-                    </dependency>
-                    <dependency>
-                        <groupId>org.aspectj</groupId>
-                        <artifactId>aspectjweaver</artifactId>
-                        <version>${aspectj.version}</version>
-                    </dependency>
-                </dependencies>
-                <configuration>
-                    <complianceLevel>${ajc.version}</complianceLevel>
-                    <source>${ajc.version}</source>
-                    <target>${ajc.version}</target>
-                    <Xlint>ignore</Xlint>
-                    <weaveWithAspectsInMainSourceFolder>true</weaveWithAspectsInMainSourceFolder>
-                    <weaveMainSourceFolder>true</weaveMainSourceFolder>
-                    <showWeaveInfo>true</showWeaveInfo>
-                    <basedir>src/main/java</basedir>
-                    <includes>
-                        <include>**/*.java</include>
-                        <include>**/*.aj</include>
-                    </includes>
-                </configuration>
-                <executions>
-                    <execution>
-                        <id>compile_with_aspectj</id>
-                        <goals>
-                            <goal>compile</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>-->
-        </plugins>
-    </build>
 </project>

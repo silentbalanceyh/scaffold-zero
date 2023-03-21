@@ -1,2 +1,3 @@
 run.env.sh
 .env.development
+app@jar/inst-load.jar

@@ -1,0 +1,6 @@
+databaseChangeLog:
+  # 辅助数据
+  # ---- 测试表
+  - include:
+      file: plugin/sql/commerce/ZO_ROOM.sql
+      relativeToChangelogFile: false

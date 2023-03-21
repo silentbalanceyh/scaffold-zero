@@ -1,0 +1,22 @@
+{
+    "supportGroup": true,
+    "supportSecondary": true,
+    "verifyCode": true,
+    "verifyLimitation": 3,
+    "category": {
+        "employee": {
+            "classDao": "cn.vertxup.erp.domain.tables.daos.EEmployeeDao",
+            "condition": {
+                "workNumber,!n": ""
+            },
+            "mapping": {
+                "modelKey": "employeeId"
+            }
+        }
+    },
+    "initializePassword": "25D55AD283AA400AF464C76D713C07AD",
+    "initialize": {
+        "scope": "app.micro.scaffold",
+        "grantType": "authorization_code"
+    }
+}
