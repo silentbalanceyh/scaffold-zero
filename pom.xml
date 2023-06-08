@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>vertx-import</artifactId>
+        <groupId>cn.vertxup</groupId>
+        <version>0.9.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>cn.vertxup.scaffold</groupId>
+    <artifactId>vertx-zero-scaffold</artifactId>
+    <version>0.1-RELEASE</version>
+    <modules>
+        <module>zo-inst</module>
+        <module>zo-module</module>
+        <module>zo-zone</module>
+        <module>zo-app</module>
+    </modules>
+    <packaging>pom</packaging>
+    <name>「Experiment」Zero Scaffold Framework</name>
+    <properties>
+        <ajc.version>1.8</ajc.version>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.32</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jooq</groupId>
+            <artifactId>jooq</artifactId>
+        </dependency>
+    </dependencies>
+    <dependencyManagement>
+        <dependencies>
+            <!-- 项目本身 -->
+            <dependency>
+                <groupId>cn.vertxup.scaffold</groupId>
+                <artifactId>zo-commerce</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.vertxup.scaffold</groupId>
+                <artifactId>zo-zero</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <!-- Vertx Sync -->
+            <dependency>
+                <groupId>io.vertx</groupId>
+                <artifactId>vertx-sync</artifactId>
+                <version>${vertx.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>

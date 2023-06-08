@@ -1,0 +1,28 @@
+server:
+  - name: ht-web
+    type: http
+    config:
+      port: 7085
+      host: 0.0.0.0
+  - name: ht-ws
+    type: sock
+    config:
+      port: 7085
+      webSocketSubProtocols:
+        - v12.stomp
+        - v11.stomp
+        - v10.stomp
+    websocket:
+      # publish: /ws/     # Whether Enable Publish Channel  ( Non Secure )
+      component: io.vertx.tp.plugin.stomp.websocket.AresStomp
+      # Ares component for Extenstion ( STOMP )
+      config:
+        stomp:
+          port: -1
+          secured: true   # Enable Security Provider
+          websocketBridge: true
+          websocketPath: /api/web-socket/stomp
+          # stomp:        # STOMP Handler Configuration
+          # bridge:       # Bridge Configuration about `PermittedOptions`
+          # handler:      # Handler Configuration ( Different Handler Maybe )
+      ## server:           # Sock Server / Stomp Server ( The Port Must be not conflict with HTTP )

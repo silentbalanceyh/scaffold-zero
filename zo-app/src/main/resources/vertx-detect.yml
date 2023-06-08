@@ -1,0 +1,97 @@
+# 「数据库」-----------------------------------------------------------------------
+jooq:
+  provider:
+    driverClassName: "com.mysql.cj.jdbc.Driver"
+    username: zo
+    password: xxxxxxijn123
+    instance: DB_SCAFFOLD
+    port: 3306
+    hostname: "ox.engine.cn"
+    jdbcUrl: "jdbc:mysql://${hostname}:${port}/${instance}?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&failOverReadOnly=false&useSSL=false&allowPublicKeyRetrieval=true"
+
+
+# 「工作流」-----------------------------------------------------------------------
+## 工作流配置
+workflow:
+  name: ZO-WORKFLOW-ENGINE
+  builtIn:
+    - workflow/workflow-erp.xlsx          # 办公类流程
+  resource:
+    - process.oa.assignment               # 工作交接流程
+    - process.oa.training                 # 培训管理流程
+    - process.oa.trip                     # 出差申请流程
+    - process.oa.vacation                 # 休假申请流程
+    - process.vendor.assessment           # 三方员工考核流程
+    - process.vendor.check-in             # 三方员工入场流程
+    - process.vendor.check-out            # 三方员工离场流程
+    - process.vendor.hour                 # 工时补签流程
+  database:
+    driverClassName: "com.mysql.cj.jdbc.Driver"
+    username: zo
+    password: xxxxxxijn123
+    instance: DB_SCAFFOLD_WF
+    port: 3306
+    hostname: "ox.engine.cn"
+    jdbcUrl: "jdbc:mysql://${hostname}:${port}/${instance}?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&failOverReadOnly=false&useSSL=false&allowPublicKeyRetrieval=true"
+
+
+      # 「缓存」-----------------------------------------------------------------------
+      # cache:
+      # L1 Cache between Dao and Database
+      # l1:
+      # component: "io.vertx.tp.plugin.redis.cache.L1"
+      # worker: "io.vertx.tp.plugin.redis.cache.L1Worker"
+      # subscribe: "EVENT://L1-CACHE/FOR/DAO"
+      # options:
+      # Definition for spec situations
+    # matrix:
+    #
+    # L2 Cache between Service and Dao
+
+    # L3 Cache between Api and Service
+
+
+    # 「Redis」-----------------------------------------------------------------------
+    # Redis
+    # redis:
+    # host: ox.engine.cn
+    # port: 6379
+
+
+    # 「Trash」-----------------------------------------------------------------------
+    # trash:
+    # keepDay: -1
+
+
+    # 「ES」-----------------------------------------------------------------------
+    # Redis
+    # elasticsearch:
+    # hostname: ox.integration.cn
+    # port: 9200
+    # scheme: http
+    # index: cmdb
+    # username: elastic
+    # password: xxx
+
+
+    # 「Neo4j」-----------------------------------------------------------------------
+    # 图引擎库
+    # neo4j:
+    # port: 7687
+    # protocol: bolt
+    # hostname: ox.integration.cn
+    # username: neo4j
+    # password: "xxx"
+
+
+  # 「监控」-----------------------------------------------------------------------
+  # monitor:
+  # 打开安全模式的监控
+  # secure: /api
+  # 监控组件
+  # quota:
+  # - path: rbac/permission
+  #   component: io.vertx.tp.rbac.meansure.PermissionQuota
+  # - path: rbac/resource
+  #   component: io.vertx.tp.rbac.meansure.ResourceQuota
+

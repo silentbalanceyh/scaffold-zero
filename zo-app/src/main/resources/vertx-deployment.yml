@@ -1,0 +1,69 @@
+# 「路由配置」-----------------------------------------------------------------------
+## 动态路由配置部署
+router:
+  wall: /api
+  worker:
+    instances: 64
+  agent:
+    instances: 32
+  unity: io.vertx.tp.optic.environment.UnityAmbient
+
+## 静态路由配置部署
+deployment:
+  mode: CONFIG
+  delivery:
+    # 30 time
+    timeout: 180000
+  options:
+    io.vertx.up.verticle.ZeroHttpAgent:
+      instances: 64
+    io.vertx.up.verticle.ZeroHttpWorker:
+      instances: 64
+      workerPoolSize: 128
+
+
+# 「跨域配置」-----------------------------------------------------------------------
+# Cross Domain
+cors:
+  credentials: true
+  methods:
+    - DELETE
+    - GET
+    - POST
+    - PUT
+    - OPTIONS
+  headers:
+    - Authorization
+    - Accept
+    - Content-Disposition
+    - Content-Encoding
+    - Content-Length
+    - Content-Type
+    - X-App-Id
+    - X-App-Key
+    - X-Sigma
+    - X-Lang
+    - X-Session-Id
+  origin:
+    - "http://ox.server.cn:7005"
+
+
+# 「开发配置」-----------------------------------------------------------------------
+# 1. 调试诊断选项直接使用环境变量名，优先从环境变量中提取信息
+# 2. 外置设置了环境变量时，配置的环境变量失效
+development:
+  # 环境变量默认值设置
+  ENV:
+    # 缓存
+    # Z_CACHE_UI:              false          # UI界面缓存
+    # Z_CACHE_ADMIT:           false          # 安全管理缓存
+
+    # 开发
+    Z_DEV_JOOQ_COND:         true             # Jooq日志
+    Z_DEV_EXPR_BIND:         true             # 表达式引擎
+    # Z_DEV_EXCEL_RANGE:       true           # Excel扫描日志
+    # Z_DEV_JOB_BOOT:          true           # Job启动日志
+    Z_DEV_JVM_STACK:         true             # JVM Stack日志
+    # Z_DEV_WEB_URI:           true           # Web URI检测日志
+    # Z_DEV_DAO_BIND:          true           # CRUD执行日志
+    # Z_DEV_AUTHORIZED:        true           # 安全认证授权

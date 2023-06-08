@@ -1,0 +1,16 @@
+{
+    "name": "member",
+    "daoCls": "com.needee.domain.tables.daos.HtlMemberDao",
+    "pojo": "hotel-member",
+    "field": {
+        "numbers": {
+            "code": "NUM.MEMBER"
+        },
+        "unique": [
+            [
+                "code",
+                "sigma"
+            ]
+        ]
+    }
+}

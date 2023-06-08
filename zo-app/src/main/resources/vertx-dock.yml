@@ -1,0 +1,57 @@
+# 「模块配置导入」-----------------------------------------------------------------------
+boot:
+  - executor: io.vertx.tp.ke.booter.AmbientOOB
+  - executor: io.vertx.tp.ke.booter.RbacOOB
+  - executor: io.vertx.tp.ke.booter.ErpOOB
+  - executor: io.vertx.tp.ke.booter.PsiOOB
+  - executor: io.vertx.tp.ke.booter.FmOOB
+  - executor: io.vertx.tp.ke.booter.UiOOB
+  - executor: io.vertx.tp.ke.booter.JetOOB
+  - executor: io.vertx.tp.ke.booter.GraphicOOB
+  - executor: io.vertx.tp.ke.booter.AtomOOB
+  - executor: io.vertx.tp.ke.booter.LbsOOB
+  - executor: io.vertx.tp.ke.booter.WfOOB
+  - executor: io.vertx.tp.ke.booter.IsOOB
+  - executor: io.vertx.tp.ke.booter.BatteryOOB
+  - executor: io.vertx.tp.ke.booter.TplOOB
+  - executor: cn.vertxup.zo.ke.booter.ZoOob   # 测试模块
+
+
+# 「模块初始化」-----------------------------------------------------------------------
+init:
+  # 初始化Crud
+  - component: io.vertx.tp.crud.init.IxPin
+  # 初始化Rbac
+  - component: io.vertx.tp.rbac.init.ScPin
+  # 初始化Ambient
+  - component: io.vertx.tp.ambient.init.AtPin
+  # 初始化Ui
+  - component: io.vertx.tp.ui.init.UiPin
+  # 初始化Workflow
+  - component: io.vertx.tp.workflow.init.WfPin
+  # 初始化目录
+  - component: io.vertx.tp.is.init.IsPin
+  # 初始化Atom
+  - component: io.vertx.tp.atom.init.AoPin
+  # 初始化Api
+  - component: io.vertx.tp.jet.init.JtPin
+    async: true
+
+
+# 「模块化加载」-----------------------------------------------------------------------
+## 模块化架构（License管理）
+module:
+  builtIn:
+
+
+# 「扩展组件」-----------------------------------------------------------------------
+extension:
+  region:
+    component: io.vertx.tp.rbac.extension.DataRegion
+    config:
+      prefix: /api/
+  auditor:
+    component: io.vertx.tp.rbac.extension.AuditorPin
+    config:
+      include:
+        - /api/mcard/publish              # 会员发卡

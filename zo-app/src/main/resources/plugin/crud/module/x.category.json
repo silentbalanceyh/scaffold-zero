@@ -1,0 +1,48 @@
+{
+    "name": "x-category",
+    "daoCls": "cn.vertxup.ambient.domain.tables.daos.XCategoryDao",
+    "field": {
+        "unique": [
+            [
+                "code",
+                "type",
+                "sigma"
+            ]
+        ]
+    },
+    "transform": {
+        "initial": {
+            "type": "`${module}`",
+            "identifier": "`${module}`"
+        },
+        "tree": {
+            "in": "code",
+            "region": {
+                "type": "`${type}`"
+            }
+        }
+    },
+    "connect": {
+        "targetIndent": "identifier",
+        "target": {
+            "fm.term": {
+                "keyJoin": "category",
+                "synonym": {
+                    "type": "termType"
+                }
+            },
+            "fm.subject": {
+                "keyJoin": "category"
+            },
+            "hotel.commodity": {
+                "keyJoin": "categoryId"
+            },
+            "hotel.compensation": {
+                "keyJoin": "categoryId"
+            }
+        },
+        "source": {
+            "keyJoin": "key"
+        }
+    }
+}

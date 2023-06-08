@@ -1,0 +1,10 @@
+databaseChangeLog:
+  # 辅助数据
+  # ---- 会员表
+  - include:
+      file: plugin/sql/commerce/ZO_MEMBER.sql
+      relativeToChangelogFile: false
+  # ---- 会员卡
+  - include:
+      file: plugin/sql/commerce/ZO_CARD.sql
+      relativeToChangelogFile: false

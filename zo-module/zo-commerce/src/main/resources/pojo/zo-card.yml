@@ -1,0 +1,18 @@
+mapping:
+  pkId: key
+  isActive: active
+  zSigma: sigma
+  zLanguage: language
+  zCreateBy: createdBy
+  zCreateTime: createdAt
+  zUpdateBy: updatedBy
+  zUpdateTime: updatedAt
+  jConfig: config
+  sCode: code
+  dAmount: amount            # 卡中金额
+  dExpiredTime: expiredTime  # 过期时间
+  lPoint: point              # 卡中积分
+  sBatch: batch              # 发卡批次
+  sNumber: number            # 卡号
+  rltCardType: cardType      # 会员卡类型
+  isMajor: major             # 主卡

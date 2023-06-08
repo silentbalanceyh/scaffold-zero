@@ -1,0 +1,41 @@
+# 「核心插件」-----------------------------------------------------------------------
+# Jooq: 数据库Jooq静态访问专用插件
+jooq: io.vertx.tp.plugin.jooq.JooqInfix
+
+
+# Cache: 缓存专用，内存级缓存，共享SharedMap专用插件
+shared: io.vertx.tp.plugin.shared.MapInfix
+
+
+# Excel: 导入导出专用插件
+excel: io.vertx.tp.plugin.excel.ExcelInfix
+
+
+
+
+# 「接口/任务插件」--------------------------------------------------------------------
+# Router: 动态路由插件，直接关联到 jet 中的启动器
+router: io.vertx.tp.jet.JetPollux
+
+
+# Job: 任务插件
+# job: io.vertx.up.uca.job.plugin.JobInfix
+
+
+
+
+# 「可插拔组件插件」-------------------------------------------------------------------
+# Trash: 历史库启用插件（删除备份回收站逻辑）
+# trash: io.vertx.tp.plugin.history.TrashInfix
+
+
+# Es: ES专用插件
+# elasticsearch: io.vertx.tp.plugin.elasticsearch.ElasticSearchInfix
+
+
+# Neo4j: 图引擎数据库专用
+# neo4j: io.vertx.tp.plugin.neo4j.Neo4jInfix
+
+
+# Redis: 连接Redis专用插件
+# redis: io.vertx.tp.plugin.redis.RedisInfix

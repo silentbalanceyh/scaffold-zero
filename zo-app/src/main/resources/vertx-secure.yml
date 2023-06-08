@@ -1,0 +1,17 @@
+secure:
+  jwt:
+    options:
+      jwtOptions:
+        algorithm: HS256
+      keyStore:
+        type: jceks
+        path: keys/keystore.jceks
+        password: zeroup
+
+
+
+# Session
+# session:
+#   config:
+#     category: DEFINED
+#     store: io.vertx.tp.plugin.redis.RedisStore

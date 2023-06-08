@@ -1,0 +1,28 @@
+- hosts: ox.engine.cn
+  remote_user: lang
+  vars:
+    zero_ansible: "/tmp/zero@ansible/app-zo"
+  tasks:
+    # 步骤1 ( 脚本拷贝文件到 /tmp )
+    - name: Run/01.创建目录
+      file:
+        path: "{{ zero_ansible }}"
+        state: directory
+    - name: Run/02.01.拷贝SQL/init.account.sql
+      copy: src="{{ path_run }}/init.account.sql" dest="{{ zero_ansible }}" mode=755
+    - name: Run/02.02.拷贝SQL/init.app-database.sql
+      copy: src="{{ path_source }}/init.app-database.sql" dest="{{ zero_ansible }}" mode=755
+    - name: Run/02.03.拷贝SQL/init.workflow-engine.sql
+      copy: src="{{ path_source }}/init.workflow-engine.sql" dest="{{ zero_ansible }}" mode=755
+    - name: Run/02.04.拷贝Shell/init.database.sh
+      copy: src="{{ path_run }}/init.database.sh" dest="{{ zero_ansible }}" mode=755
+    # --> SQL: 执行账号初始化
+    - name: Run/03.初始化数据库/Start
+      shell: "{{ zero_ansible }}/init.database.sh"
+      environment:
+        DB_PASSWORD: "{{ db_password }}"
+        DB_HOST: "ox.engine.cn"
+        DB_RUN: "{{ zero_ansible }}"
+      register: result
+    - name: 01-OUTPUT
+      debug: var=result

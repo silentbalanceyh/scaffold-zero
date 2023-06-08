@@ -1,0 +1,48 @@
+[
+    {
+        "title": "会员卡号",
+        "dataIndex": "number",
+        "$filter.type": "SEARCH",
+        "$filter.config": {
+            "placeholder": "输入会员卡号",
+            "button": {
+                "search": "搜索",
+                "reset": "重置"
+            }
+        }
+    },
+    {
+        "title": "卡类型",
+        "dataIndex": "cardType",
+        "$render": "DATUM",
+        "$datum": "source=card.type,value=key,display=name"
+    },
+    {
+        "title": "积分",
+        "dataIndex": "point",
+        "$expr": ":value分",
+        "sorter": true
+    },
+    {
+        "title": "余额",
+        "dataIndex": "amount",
+        "sorter": true,
+        "$render": "CURRENCY"
+    },
+    {
+        "title": "过期时间",
+        "dataIndex": "expiredTime",
+        "$render": "DATE",
+        "$format": "YYYY-MM-DD HH:mm",
+        "$empty": "（无限期）"
+    },
+    {
+        "title": "是否启用",
+        "dataIndex": "active",
+        "$render": "LOGICAL",
+        "$mapping": {
+            "true": "启用",
+            "false": "禁用"
+        }
+    }
+]

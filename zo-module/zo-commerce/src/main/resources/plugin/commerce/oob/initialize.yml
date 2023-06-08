@@ -1,0 +1,12 @@
+-   pojoFile: zo-member
+    dao: cn.commerce.domain.tables.daos.ZoMemberDao    # 会员/会员卡
+    key: key
+    unique:
+      - mobile
+      - sigma
+-   pojoFile: zo-card
+    dao: cn.commerce.domain.tables.daos.ZoCardDao
+    key: key
+    unique:
+      - number
+      - sigma

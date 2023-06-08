@@ -1,0 +1,49 @@
+[
+    {
+        "title": "会员号",
+        "dataIndex": "code",
+        "sorter": true
+    },
+    {
+        "title": "姓名",
+        "dataIndex": "realname"
+    },
+    {
+        "title": "移动电话",
+        "dataIndex": "mobile"
+    },
+    {
+        "title": "积分",
+        "dataIndex": "point",
+        "sorter": true
+    },
+    {
+        "title": "会员级别",
+        "dataIndex": "level",
+        "$render": "DATUM",
+        "$datum": {
+            "source": "member.type",
+            "value": "key",
+            "display": "name"
+        }
+    },
+    {
+        "title": "会员状态",
+        "dataIndex": "status",
+        "$render": "DATUM",
+        "$datum": {
+            "source": "member.status",
+            "value": "key",
+            "display": "name"
+        }
+    },
+    {
+        "title": "是否启用",
+        "dataIndex": "active",
+        "$render": "LOGICAL",
+        "$mapping": {
+            "true": "启用",
+            "false": "禁用"
+        }
+    }
+]

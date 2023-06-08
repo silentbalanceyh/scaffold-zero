@@ -1,0 +1,25 @@
+mapping:
+  pkId: key
+  isActive: active
+  zSigma: sigma
+  zLanguage: language
+  zCreateBy: createdBy
+  zCreateTime: createdAt
+  zUpdateBy: updatedBy
+  zUpdateTime: updatedAt
+  jConfig: config
+  sCode: code
+  rIdentityId: identityId
+  rCompanyId: companyId
+  rCardId: cardId
+  lPoint: point           # 会员积分
+  sProposer: proposer     # 推荐人
+  rltMberLevel: level     # 会员等级
+  rltMberStatus: status   # 会员状态
+  sLicenseNum: licenseNumber  # 驾驶证
+  sMobile: mobile             # 会员手机
+  sNickname: nickname         # 昵称
+  sPhoto: photo               # 会员头像
+  sRealname: realname         # 姓名
+  dBirthday: birthday         # 生日
+  isMale: male                # 性别

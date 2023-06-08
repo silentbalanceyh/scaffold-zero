@@ -1,0 +1,23 @@
+excel:
+  pen: "io.vertx.tp.plugin.excel.tpl.BlueTpl"
+  environment:
+    -   name: environment.ambient.xlsx
+        path: "init/oob/environment.ambient.xlsx"
+        alias:
+          - /src/main/resources/init/oob/environment.ambient.xlsx
+  temp: /tmp/
+  tenant: "init/environment.json"
+  mapping:
+    # 会员/会员卡
+    - pojoFile: zo-member
+      dao: cn.commerce.domain.tables.daos.ZoMemberDao
+      key: key
+      unique:
+        - mobile
+        - sigma
+    - pojoFile: zo-card
+      dao: cn.commerce.domain.tables.daos.ZoCardDao
+      key: key
+      unique:
+        - number
+        - sigma

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>cn.vertxup.scaffold</groupId>
+        <artifactId>zo-module</artifactId>
+        <version>0.1-RELEASE</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>zo-commerce</artifactId>
+    <name>「Mod」APP/示例应用</name>
+    <dependencies>
+        <!-- Kern -->
+        <dependency>
+            <groupId>cn.vertxup</groupId>
+            <artifactId>zero-ke</artifactId>
+        </dependency>
+    </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.liquibase</groupId>
+                <artifactId>liquibase-maven-plugin</artifactId>
+                <configuration>
+                    <!-- 密码加密 -->
+                    <propertyProviderClass>io.vertx.tp.plugin.database.LiquibaseEncryption</propertyProviderClass>
+                    <!-- 配置文件路径 -->
+                    <propertyFile>plugin/sql/commerce.properties</propertyFile>
+                    <changeLogFile>plugin/sql/commerce.yml</changeLogFile>
+                    <!-- 配置参数 -->
+                    <promptOnNonLocalDatabase>false</promptOnNonLocalDatabase>
+                    <outputFileEncoding>UTF-8</outputFileEncoding>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

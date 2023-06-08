@@ -1,0 +1,16 @@
+{
+    "name": "mcard",
+    "daoCls": "com.needee.domain.tables.daos.HtlCardDao",
+    "pojo": "hotel-card",
+    "field": {
+        "numbers": {
+            "code": "NUM.MEMBER.CARD"
+        },
+        "unique": [
+            [
+                "code",
+                "sigma"
+            ]
+        ]
+    }
+}
