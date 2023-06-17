@@ -51,7 +51,7 @@ if [ "DEV" == "$DB_ENV" ]; then
   chmod +x ./target/*.jar
   echo "04.执行数据导入/Start"
   # 注意此处运行必须是生产级
-  java -jar target/inst-load.jar true
+  java -jar target/inst-load.jar
   echo "05.数据导入完成/End"
   if [ -z "$DB_ATOM" ]; then
     echo "06.未开启动态建模！结束。"
@@ -70,6 +70,8 @@ if [ "DEV" == "$DB_ENV" ]; then
   java -jar target/inst-menu.jar
   echo "07.菜单规划/End"
 elif [ "PROD" == "$DB_ENV" ]; then
-  echo "等待开发……"
+  mysql -u zero -P 3306 -p "$DB_PASSWORD" -h "$DB_HOST"  DB_HOST  < ${PWD}/app@runtime/@backup/DB_HOTEL.sql
+  mysql -u zero -P 3306 -p "$DB_PASSWORD" -h "$DB_HOST"  DB_HOTEL_WF  < ${PWD}/app@runtime/@backup/DB_HOTEL_WF.sql
+  echo "数据库导入完成"
 fi
 echo "Successfully! 您的数据库已全部初始化完成，现在您可以启动Zero容器了!!!"

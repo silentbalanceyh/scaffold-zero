@@ -8,6 +8,9 @@
     "createdBy": "zero-environment",
     "scope": "app.micro.scaffold"
   },
+  "application": {
+    "name": "app.micro.scaffold"
+  },
   "dictionary": {
     "S_PERM_SET": {
       "type": {
@@ -17,5 +20,7 @@
         "安全管理": "670565fd-40ea-4d31-bc9a-533e2d4f16b6"
       }
     }
+  },
+  "forbidden": {
   }
 }

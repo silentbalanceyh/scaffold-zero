@@ -44,12 +44,14 @@ Z_CORS_DOMAIN=http://ox.server.cn:7005
 # ----------------------- RESTful
 # Z_API_HOST: 主机地址，0.0.0.0表示任意IP都可访问
 # Z_API_PORT: 后端端口
+# ----
 # Z_API_HOST=0.0.0.0
 Z_API_PORT=7085
 
 # ----------------------- Sock
 # Z_SOCK_HOST: 主机地址，0.0.0.0
 # Z_SOCK_PORT: 端口（默认直接挂在API上）
+# ----
 # Z_SOCK_HOST=0.0.0.0
 # Z_SOCK_PORT=7085
 
@@ -57,6 +59,7 @@ Z_API_PORT=7085
 # Z_DBS_HOST: 数据库连接主机地址
 # Z_DBS_PORT: 数据库端口
 # Z_DBS_INSTANCE：数据库实例名
+# ----
 # Z_DBS_HOST=ox.engine.cn
 # Z_DBS_PORT=3306
 # Z_DBS_INSTANCE=DB_HOTEL
@@ -65,6 +68,7 @@ Z_API_PORT=7085
 # Z_DBW_HOST: 数据库连接主机地址
 # Z_DBW_PORT: 数据库端口
 # Z_DBW_INSTANCE：数据库实例名
+# ----
 # Z_DBW_HOST=ox.engine.cn
 # Z_DBW_PORT=3306
 # Z_DBW_INSTANCE=DB_HOTEL_WF
@@ -73,9 +77,12 @@ Z_API_PORT=7085
 # Z_DBH_HOST: 数据库连接主机地址
 # Z_DBH_PORT: 数据库端口
 # Z_DBH_INSTANCE：数据库实例名
+# ----
 # Z_DBH_HOST=ox.engine.cn
 # Z_DBH_PORT=3306
 # Z_DBH_INSTANCE=DB_HOTEL_HIS
 
 # ----------------------- HED 模块（必须）
 Z_HED_ENABLED=true
+# ----------------------- 集成服务 System KIntegration Service
+Z_SIS_STORE=/Users/lang/zero-cloud/runtime/store

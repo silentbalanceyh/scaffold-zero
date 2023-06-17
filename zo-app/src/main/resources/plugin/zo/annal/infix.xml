@@ -13,7 +13,7 @@
     </appender>
     <appender name="ASYNC_ZO" class="ch.qos.logback.classic.AsyncAppender">
         <discardingThreshold>0</discardingThreshold>
-        <queueSize>512</queueSize>
+        <queueSize>8192</queueSize>
         <appender-ref ref="ZO"/>
     </appender>
     <logger name="cn.vertxup.scaffold" level="INFO">
@@ -34,10 +34,10 @@
     </appender>
     <appender name="ASYNC_ZO_WEB" class="ch.qos.logback.classic.AsyncAppender">
         <discardingThreshold>0</discardingThreshold>
-        <queueSize>512</queueSize>
+        <queueSize>8192</queueSize>
         <appender-ref ref="ZO_WEB"/>
     </appender>
-    <logger name="cn.vertxup.micro" level="INFO">
+    <logger name="cn.vertxup.scaffold" level="INFO">
         <appender-ref ref="ASYNC_ZO_WEB"/>
     </logger>
 </included>

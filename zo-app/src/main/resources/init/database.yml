@@ -2,7 +2,7 @@ databaseChangeLog:
   # liquibase.exception.DatabaseException: The table does not comply with the requirements by an external plugin
   - preConditions:
       customPrecondition:
-        className: io.vertx.tp.plugin.database.LiquibaseMySQL8Pre
+        className: io.vertx.up.plugin.database.LiquibaseMySQL8Pre
   # 界面表
   - include:
       file: plugin/sql/ui.yml

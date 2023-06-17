@@ -1,5 +1,5 @@
 {
-    "implPin": "cn.originx.infix.mysql5.MySqlPin",
+    "implPin": "io.mature.extension.infix.mysql5.MySqlPin",
     "implSwitcher": "cn.originx.uca.plugin.AtomSwitcher",
     "defineJson": "atom/target/"
 }

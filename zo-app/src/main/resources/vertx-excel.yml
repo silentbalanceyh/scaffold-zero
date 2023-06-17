@@ -1,10 +1,10 @@
 excel:
-  pen: "io.vertx.tp.plugin.excel.tpl.BlueTpl"
+  pen: "io.vertx.up.plugin.excel.tpl.BlueTpl"
   environment:
-    -   name: environment.ambient.xlsx
-        path: "init/oob/environment.ambient.xlsx"
-        alias:
-          - /src/main/resources/init/oob/environment.ambient.xlsx
+    - name: environment.ambient.xlsx
+      path: "init/oob/environment.ambient.xlsx"
+      alias:
+        - /src/main/resources/init/oob/environment.ambient.xlsx
   temp: /tmp/
   tenant: "init/environment.json"
   mapping:

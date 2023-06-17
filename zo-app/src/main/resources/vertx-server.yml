@@ -14,7 +14,7 @@ server:
         - v10.stomp
     websocket:
       # publish: /ws/     # Whether Enable Publish Channel  ( Non Secure )
-      component: io.vertx.tp.plugin.stomp.websocket.AresStomp
+      component: io.vertx.up.plugin.stomp.websocket.AresStomp
       # Ares component for Extenstion ( STOMP )
       config:
         stomp:
