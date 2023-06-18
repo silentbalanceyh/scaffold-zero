@@ -1,8 +1,9 @@
 {
     "supportSource": true,
-    "initializer": "io.vertx.tp.optic.ambient.ApplicationInitializer",
+    "initializer": "io.horizon.spi.ambient.ApplicationInitializer",
     "dataFolder": "init/oob/",
     "fileStorage": "FILE",
     "fileLanguage": "cn",
-    "storePath": "/apps/ht/document"
+    "fileIntegration": "zero.directory",
+    "storePath": "/apps/zo/document"
 }

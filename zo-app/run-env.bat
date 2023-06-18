@@ -1,0 +1,11 @@
+@echo off
+ set  COMMON_PATH=%~dp0
+ set  DB_USER=root
+ set  DB_PORT=3306
+ set  DB_TYPE=MYSQL
+ set  DB_PASSWORD=xxxxxxxxx123
+ set  DB_ENV=DEV
+ set  DB_ATOM=
+ SET  DB_HOST=ox.engine.cn
+ set  Z_HED_ENABLED=true
+ SET  Z_APP=app.micro.scaffold

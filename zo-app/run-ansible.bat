@@ -1,5 +1,5 @@
 @echo OFF
-  call run.env.bat
+  call run-env.bat
    echo %DB_TYPE%
      if "%DB_TYPE%"=="" (
         echo "The environment variable is missing, please set: DB_ TYPE ( TIDB | MYSQL )"
@@ -21,8 +21,7 @@
           cd %~dp0
           call run-init.bat
           copy %~dp0app@jar\*.jar .\target\
-          java -jar target/inst-load.jar true
-          java -jar target/inst-menu.jar true
+          java -jar target/inst-load.jar
     )
      if "%DB_ATOM%" =="" (
      echo 06. Dynamic modeling is not enabled! end.
@@ -34,8 +33,11 @@
         java -jar target/inst-atom.jar cmdb %~dp0
         echo 06. Dynamic modeling/End
     )
+        java -jar target/inst-menu.jar
      if "PROD" == "%DB_ENV%" (
-         echo Waiting for development...
+         mysql -u"%DB_USER%" -P"%DB_PORT%" -p"%DB_PASSWORD%" -h "%DB_HOST%" --get-server-public-key DB_HOTEL <  "%COMMON_PATH%"\app@runtime\@backup\DB_HOTEL.sql
+         mysql -u"%DB_USER%" -P"%DB_PORT%" -p"%DB_PASSWORD%" -h "%DB_HOST%" --get-server-public-key DB_HOTEL_WF <  "%COMMON_PATH%"\app@runtime\@backup\DB_HOTEL_WF.sql
+         echo "Database import completed"
      )
     echo Successfully! Your database has been fully initialized. Now you can start the Zero container!!!
 

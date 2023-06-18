@@ -3,7 +3,7 @@ jooq:
   provider:
     driverClassName: "com.mysql.cj.jdbc.Driver"
     username: zo
-    password: xxxxxxijn123
+    password: xxxxxxxxx123
     instance: DB_SCAFFOLD
     port: 3306
     hostname: "ox.engine.cn"
@@ -28,7 +28,7 @@ workflow:
   database:
     driverClassName: "com.mysql.cj.jdbc.Driver"
     username: zo
-    password: xxxxxxijn123
+    password: xxxxxxxxx123
     instance: DB_SCAFFOLD_WF
     port: 3306
     hostname: "ox.engine.cn"

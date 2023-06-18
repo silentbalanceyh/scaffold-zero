@@ -6,7 +6,6 @@ router:
     instances: 64
   agent:
     instances: 32
-  unity: io.vertx.tp.optic.environment.UnityAmbient
 
 ## 静态路由配置部署
 deployment:
@@ -15,9 +14,9 @@ deployment:
     # 30 time
     timeout: 180000
   options:
-    io.vertx.up.verticle.ZeroHttpAgent:
+    io.vertx.up.bottle.ZeroHttpAgent:
       instances: 64
-    io.vertx.up.verticle.ZeroHttpWorker:
+    io.vertx.up.bottle.ZeroHttpWorker:
       instances: 64
       workerPoolSize: 128
 
@@ -59,11 +58,11 @@ development:
     # Z_CACHE_ADMIT:           false          # 安全管理缓存
 
     # 开发
-    Z_DEV_JOOQ_COND:         true             # Jooq日志
-    Z_DEV_EXPR_BIND:         true             # 表达式引擎
+    # Z_DEV_JOOQ_COND:         true           # Jooq日志
+    Z_DEV_EXPR_BIND: true                     # 表达式引擎
     # Z_DEV_EXCEL_RANGE:       true           # Excel扫描日志
     # Z_DEV_JOB_BOOT:          true           # Job启动日志
-    Z_DEV_JVM_STACK:         true             # JVM Stack日志
+    Z_DEV_JVM_STACK: true                     # JVM Stack日志
     # Z_DEV_WEB_URI:           true           # Web URI检测日志
     # Z_DEV_DAO_BIND:          true           # CRUD执行日志
     # Z_DEV_AUTHORIZED:        true           # 安全认证授权
