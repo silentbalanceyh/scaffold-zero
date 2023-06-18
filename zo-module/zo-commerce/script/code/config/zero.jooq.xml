@@ -6,7 +6,7 @@
             <![CDATA[ jdbc:mysql://ox.engine.cn:3306/DB_SCAFFOLD?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&failOverReadOnly=false&useSSL=false&allowPublicKeyRetrieval=true ]]>
         </url>
         <username>zero</username>
-        <password>xxxxxxijn123</password>
+        <password>xxxxxxxxx123</password>
     </jdbc>
     <generator>
         <name>io.github.jklingsporn.vertx.jooq.generate.classic.ClassicJDBCVertxGenerator</name>

@@ -6,14 +6,13 @@ package cn.commerce.domain;
 
 import cn.commerce.domain.tables.ZoCard;
 import cn.commerce.domain.tables.ZoMember;
-
-import java.util.Arrays;
-import java.util.List;
-
-import io.vertx.tp.ke.refine.Ke;
+import io.vertx.mod.ke.refine.Ke;
 import org.jooq.Catalog;
 import org.jooq.Table;
 import org.jooq.impl.SchemaImpl;
+
+import java.util.Arrays;
+import java.util.List;
 
 
 /**

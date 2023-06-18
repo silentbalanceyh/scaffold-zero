@@ -8,15 +8,9 @@
         <version>0.1-RELEASE</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
+
     <artifactId>zo-commerce</artifactId>
     <name>「Mod」APP/示例应用</name>
-    <dependencies>
-        <!-- Kern -->
-        <dependency>
-            <groupId>cn.vertxup</groupId>
-            <artifactId>zero-ke</artifactId>
-        </dependency>
-    </dependencies>
     <build>
         <plugins>
             <plugin>
@@ -24,7 +18,7 @@
                 <artifactId>liquibase-maven-plugin</artifactId>
                 <configuration>
                     <!-- 密码加密 -->
-                    <propertyProviderClass>io.vertx.tp.plugin.database.LiquibaseEncryption</propertyProviderClass>
+                    <!--                    <propertyProviderClass>io.vertx.mod.plugin.database.LiquibaseEncryption</propertyProviderClass>-->
                     <!-- 配置文件路径 -->
                     <propertyFile>plugin/sql/commerce.properties</propertyFile>
                     <changeLogFile>plugin/sql/commerce.yml</changeLogFile>
