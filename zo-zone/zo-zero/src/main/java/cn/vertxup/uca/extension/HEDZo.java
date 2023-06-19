@@ -1,6 +1,6 @@
 package cn.vertxup.uca.extension;
 
-import io.aeon.experiment.specification.KPair;
+import io.horizon.atom.common.KPair;
 import io.horizon.spi.cloud.HED;
 
 /**
