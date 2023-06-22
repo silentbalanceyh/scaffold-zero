@@ -16,7 +16,7 @@
         <queueSize>8192</queueSize>
         <appender-ref ref="ZO"/>
     </appender>
-    <logger name="cn.vertxup.scaffold" level="INFO">
+    <logger name="io.zerows.scaffold" level="INFO">
         <appender-ref ref="ASYNC_ZO"/>
     </logger>
 
@@ -37,7 +37,7 @@
         <queueSize>8192</queueSize>
         <appender-ref ref="ZO_WEB"/>
     </appender>
-    <logger name="cn.vertxup.scaffold" level="INFO">
+    <logger name="io.zerows.scaffold" level="INFO">
         <appender-ref ref="ASYNC_ZO_WEB"/>
     </logger>
 </included>

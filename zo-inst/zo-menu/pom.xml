@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <artifactId>zo-inst</artifactId>
-        <groupId>cn.vertxup.scaffold</groupId>
+        <groupId>io.zerows.scaffold</groupId>
         <version>0.1-RELEASE</version>
     </parent>
 
@@ -14,7 +14,7 @@
     <dependencies>
 
         <dependency>
-            <groupId>cn.vertxup.scaffold</groupId>
+            <groupId>io.zerows.scaffold</groupId>
             <artifactId>zo-commerce</artifactId>
         </dependency>
         <dependency>

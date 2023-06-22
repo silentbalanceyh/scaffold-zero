@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>zo-zone</artifactId>
-        <groupId>cn.vertxup.scaffold</groupId>
+        <groupId>io.zerows.scaffold</groupId>
         <version>0.1-RELEASE</version>
     </parent>
 

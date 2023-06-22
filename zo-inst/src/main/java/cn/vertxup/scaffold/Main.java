@@ -1,4 +1,4 @@
-package cn.vertxup.scaffold;
+package io.zerows.scaffold;
 
 public class Main {
     public static void main(String[] args) {

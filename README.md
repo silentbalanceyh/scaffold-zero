@@ -1,4 +1,4 @@
-# 操作步骤
+# 后端脚手架
 
 |基础项| 说明                                      |
 |---|-----------------------------------------|
@@ -29,8 +29,8 @@ mvn clean package install
 ### 2.2. 代码下载后编译
 
 ```shell
-git clone https://gitee.com/silentbalanceyh/vertx-zero-scaffold
-cd vertx-zero-scaffold
+git clone https://gitee.com/silentbalanceyh/scaffold-zero
+cd scaffold-zero
 mvn clean package install
 ```
 

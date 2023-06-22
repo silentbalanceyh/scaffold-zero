@@ -7,9 +7,9 @@
         <groupId>io.zerows</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
+    <groupId>io.zerows.scaffold</groupId>
     <modelVersion>4.0.0</modelVersion>
-    <groupId>cn.vertxup.scaffold</groupId>
-    <artifactId>vertx-zero-scaffold</artifactId>
+    <artifactId>scaffold-zero</artifactId>
     <version>0.1-RELEASE</version>
     <modules>
         <module>zo-app</module>
@@ -18,7 +18,7 @@
         <module>zo-inst</module>
     </modules>
     <packaging>pom</packaging>
-    <name>「Experiment」Zero Scaffold Framework</name>
+    <name>Zero Scaffold</name>
     <properties>
         <ajc.version>1.8</ajc.version>
     </properties>
@@ -36,12 +36,12 @@
         <dependencies>
             <!-- 项目本身 -->
             <dependency>
-                <groupId>cn.vertxup.scaffold</groupId>
+                <groupId>io.zerows.scaffold</groupId>
                 <artifactId>zo-commerce</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>cn.vertxup.scaffold</groupId>
+                <groupId>io.zerows.scaffold</groupId>
                 <artifactId>zo-zero</artifactId>
                 <version>${project.version}</version>
             </dependency>
