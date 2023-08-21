@@ -12,8 +12,8 @@ fi
 
 # MySQL 账号设置
 # 1. Account
-mysql -uzero -p"$DB_PASSWORD" -h"$DB_HOST" < "$DB_RUN"/init.account.sql
+/usr/local/mysql/bin/mysql -uzero -p"$DB_PASSWORD" -h"$DB_HOST" < "$DB_RUN"/init.account.sql
 # 2. Database
-mysql -uzero -p"$DB_PASSWORD" -h"$DB_HOST" < "$DB_RUN"/init.app-database.sql
+/usr/local/mysql/bin/mysql -uzero -p"$DB_PASSWORD" -h"$DB_HOST" < "$DB_RUN"/init.app-database.sql
 # 3. Database Workflow
-mysql -uzero -p"$DB_PASSWORD" -h"$DB_HOST" < "$DB_RUN"/init.workflow-engine.sql
+/usr/local/mysql/bin/mysql -uzero -p"$DB_PASSWORD" -h"$DB_HOST" < "$DB_RUN"/init.workflow-engine.sql
