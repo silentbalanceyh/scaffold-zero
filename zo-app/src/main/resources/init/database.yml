@@ -5,62 +5,59 @@ databaseChangeLog:
         className: io.vertx.up.plugin.database.LiquibaseMySQL8Pre
   # 界面表
   - include:
-      file: plugin/sql/ui.yml
+      file: plugin/ui/db.yml
       relativeToChangelogFile: false
   # 安全表
   - include:
-      file: plugin/sql/rbac.yml
+      file: plugin/rbac/db.yml
       relativeToChangelogFile: false
   # 系统表
   - include:
-      file: plugin/sql/ambient.yml
+      file: plugin/ambient/db.yml
       relativeToChangelogFile: false
   # Erp企业信息表
   - include:
-      file: plugin/sql/erp.yml
-      relativeToChangelogFile: false
-  - include:
-      file: plugin/sql/erp-workflow.yml
+      file: plugin/erp/db.yml
       relativeToChangelogFile: false
   # 地址表
   - include:
-      file: plugin/sql/lbs.yml
+      file: plugin/lbs/db.yml
       relativeToChangelogFile: false
   # 财务系统
   - include:
-      file: plugin/sql/fm.yml
+      file: plugin/fm/db.yml
       relativeToChangelogFile: false
   # 进销存
   - include:
-      file: plugin/sql/psi.yml
+      file: plugin/psi/db.yml
       relativeToChangelogFile: false
   # 建模表
   - include:
-      file: plugin/sql/atom.yml
+      file: plugin/atom/db.yml
       relativeToChangelogFile: false
   # 图引擎
   - include:
-      file: plugin/sql/graphic.yml
+      file: plugin/graphic/db.yml
       relativeToChangelogFile: false
   # Jet
   - include:
-      file: plugin/sql/jet.yml
+      file: plugin/jet/db.yml
       relativeToChangelogFile: false
   # Workflow
   - include:
-      file: plugin/sql/wf.yml
+      file: plugin/wf/db.yml
       relativeToChangelogFile: false
   # Is
   - include:
-      file: plugin/sql/is.yml
+      file: plugin/is/db.yml
       relativeToChangelogFile: false
   # Bettery
   - include:
-      file: plugin/sql/battery.yml
+      file: plugin/battery/db.yml
       relativeToChangelogFile: false
   # Tpl
   - include:
-      file: plugin/sql/tpl.yml
+      file: plugin/tpl/db.yml
       relativeToChangelogFile: false
   # 示例系统
   - include:

@@ -1,7 +1,7 @@
 {
     "name": "mcard",
     "daoCls": "com.needee.domain.tables.daos.HtlCardDao",
-    "pojo": "hotel-card",
+    "pojo": "zo-card",
     "field": {
         "numbers": {
             "code": "NUM.MEMBER.CARD"
